@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.title != site.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body>
+  <header class="topbar">
+    <button class="menu-toggle" type="button" aria-label="Open the menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Foliage Shaders 2D</span>
+    </a>
+    <nav class="toplinks" aria-label="Main">
+      <a href="{{ '/getting-started.html' | relative_url }}">Getting Started</a>
+      <a href="{{ '/troubleshooting.html' | relative_url }}">Troubleshooting</a>
+      <a class="demo-button" href="{{ '/demo/' | relative_url }}">
+        <span class="play" aria-hidden="true"></span>Try the web demo
+      </a>
+    </nav>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <nav id="site-nav" aria-label="Documentation">
+        <p class="nav-group">Start here</p>
+        <a href="{{ '/' | relative_url }}">Overview</a>
+        <a href="{{ '/getting-started.html' | relative_url }}">Getting Started</a>
+        <a href="{{ '/pipeline-setup.html' | relative_url }}">Pipeline Setup</a>
+        <a href="{{ '/demo-scenes.html' | relative_url }}">Demo Scenes</a>
+
+        <p class="nav-group"><span class="dot dot-grass"></span>Plants</p>
+        <a href="{{ '/grass.html' | relative_url }}">Grass</a>
+        <a href="{{ '/bushes.html' | relative_url }}">Bushes</a>
+        <a href="{{ '/vines.html' | relative_url }}">Vines</a>
+
+        <p class="nav-group"><span class="dot dot-bush"></span>Motion</p>
+        <a href="{{ '/wind.html' | relative_url }}">Wind</a>
+        <a href="{{ '/interaction.html' | relative_url }}">Interaction</a>
+
+        <p class="nav-group"><span class="dot dot-vine"></span>Looks</p>
+        <a href="{{ '/styles.html' | relative_url }}">Styles</a>
+        <a href="{{ '/pixel-art.html' | relative_url }}">Pixel Art</a>
+        <a href="{{ '/presets.html' | relative_url }}">Presets</a>
+
+        <p class="nav-group">Reference</p>
+        <a href="{{ '/sorting-and-depth.html' | relative_url }}">Sorting and Depth</a>
+        <a href="{{ '/scripting-api.html' | relative_url }}">Scripting API</a>
+        <a href="{{ '/performance.html' | relative_url }}">Performance</a>
+        <a href="{{ '/troubleshooting.html' | relative_url }}">Troubleshooting</a>
+      </nav>
+      <a class="sidebar-demo" href="{{ '/demo/' | relative_url }}">
+        <span class="play" aria-hidden="true"></span>
+        <span><strong>Web demo</strong><br>Walk through every plant and style, live.</span>
+      </a>
+    </aside>
+
+    <main class="content">
+      {% if page.url == "/" or page.url == "/index.html" %}
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Unity · URP 2D · Grass, Flowers, Bushes, Vines</p>
+          <h1 class="hero-title">2D foliage that sways, bends and matches your art.</h1>
+          <p class="hero-lead">Draw a strip, pick a style: plants grow inside it, move in the wind and step aside for your player. Cartoon, pixel art, painted, realistic and flat from the same shaders.</p>
+          <div class="hero-actions">
+            <a class="demo-button big" href="{{ '/demo/' | relative_url }}"><span class="play" aria-hidden="true"></span>Try the web demo</a>
+            <a class="ghost-button" href="{{ '/getting-started.html' | relative_url }}">Get started</a>
+          </div>
+        </div>
+        <div class="plant-cards">
+          <a class="plant-card" href="{{ '/grass.html' | relative_url }}"><img src="{{ '/Images/grass.png' | relative_url }}" alt=""><span>Grass</span></a>
+          <a class="plant-card" href="{{ '/bushes.html' | relative_url }}"><img src="{{ '/Images/bushes.png' | relative_url }}" alt=""><span>Bushes</span></a>
+          <a class="plant-card" href="{{ '/vines.html' | relative_url }}"><img src="{{ '/Images/vines.png' | relative_url }}" alt=""><span>Vines</span></a>
+          <a class="plant-card" href="{{ '/styles.html' | relative_url }}"><img src="{{ '/Images/style-pixel-art.png' | relative_url }}" alt=""><span>Styles</span></a>
+        </div>
+      </section>
+      {% endif %}
+
+      <div class="page">
+        <article class="markdown">
+          {{ content }}
+        </article>
+        <aside class="toc" id="toc" aria-label="On this page"></aside>
+      </div>
+
+      <nav class="pager" id="pager" aria-label="Previous and next page"></nav>
+
+      <footer class="footer">
+        Foliage Shaders 2D · Sebastian Escobar ·
+        <a href="{{ '/demo/' | relative_url }}">Web demo</a>
+      </footer>
+    </main>
+  </div>
+
+  <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+</body>
+</html>

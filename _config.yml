@@ -1,0 +1,16 @@
+title: Foliage Shaders 2D
+description: Procedural 2D foliage for Unity (URP 2D): grass, flowers, bushes and vines that sway, bend and match your art style.
+exclude: ["*.meta", "README.md"]
+markdown: kramdown
+kramdown:
+  input: GFM
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+  - jekyll-default-layout
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
