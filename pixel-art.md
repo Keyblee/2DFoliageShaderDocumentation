@@ -5,6 +5,8 @@ palette, and they bend in whole pixels, so they sit next to your pixel-art sprit
 
 ![Pixel Art off and on](Images/effect-pixel-art.png)
 
+*Shown at 32 art pixels per unit; the Pixel Art presets use 16.*
+
 ## Setting it up
 
 1. Use a Pixel Art preset (`Grass_PixelArt`, `Bush_PixelArt`, `Vine_PixelArt`) or switch **Pixel

@@ -17,7 +17,7 @@ Foliage Shaders 2D is built to be cheap on mobile:
 
 | Device | Scene | Cards | Result |
 |---|---|---|---|
-| Samsung Galaxy S23 FE (Android) | Stress test: grass with flowers and reeds, bushes, vines, wind and interaction | 5 118 | 120 fps (the screen's refresh rate), about 8.8 ms per frame |
+| Android phone | Stress test: grass with flowers and reeds, bushes, vines, wind and interaction | 5 118 | 120 fps (the screen's refresh rate), about 8.8 ms per frame |
 
 A *card* is one blade, reed, flower stem, flower head or leaf. `FoliageStrip.CardCount` tells you
 how many a strip has.

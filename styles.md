@@ -84,6 +84,8 @@ lights like your sprites.
 
 ![Pixel Art](Images/style-pixel-art.png)
 
+*Shown at 32 art pixels per unit; the Pixel Art presets use 16.*
+
 See [Pixel Art](pixel-art.md): match Art Pixels Per Unit to your sprites and use a Pixel Perfect
 Camera.
 
