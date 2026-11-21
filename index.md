@@ -9,6 +9,8 @@ stretched: make the strip wider and more plants grow.
 
 ![Grass, bushes and vines in the Cartoon style](Images/hero.png)
 
+**[Try the web demo](https://keyblee.github.io/2DFoliageShaderDocumentation/demo/)**: walk through every plant and style, live in your browser (WebGL 2).
+
 ## What's in the pack
 
 - **Three shaders**: Grass (blades, flowers and reeds), Bush (leaf clusters) and Vine (hanging stems
@@ -53,6 +55,8 @@ stretched: make the strip wider and more plants grow.
 | [Troubleshooting](troubleshooting.md) | fix common problems |
 
 ## Support
+
+Online documentation: https://keyblee.github.io/2DFoliageShaderDocumentation/
 
 Questions or problems: use the contact on the Asset Store page. Please include your Unity version,
 render pipeline and a screenshot.
